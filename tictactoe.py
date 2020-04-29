@@ -56,7 +56,7 @@ def result(board, action):
     if action==None:
         return None
     bc=copy.deepcopy(board)
-    if bc[action[0]][action[1]]==X or bc[action[0]][action[1]]==X:
+    if bc[action[0]][action[1]]==X or bc[action[0]][action[1]]==O:
         raise Exception
     h=player(bc)
     if h==X:
